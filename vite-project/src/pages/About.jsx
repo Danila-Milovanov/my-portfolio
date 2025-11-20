@@ -1,10 +1,8 @@
 export default function About() {
-return (
-<section className="space-y-4">
-<h1 className="text-3xl font-bold">About Me</h1>
-<p className="text-neutral-400 leading-relaxed">
-My background.
-</p>
-</section>
-);
+  return (
+    <div>
+      <h1 className="text-3xl font-bold mb-2">About Me</h1>
+      <p>I'm a software developer student learning React.</p>
+    </div>
+  );
 }

@@ -1,31 +1,27 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
 
+function App() {
+  return (
+    <div className="bg-gray-900 min-h-screen text-white">
+      <Navbar />
 
-export default function App() {
-return (
-<div className="min-h-screen flex flex-col">
-<Navbar />
-
-
-<main className="flex-grow px-6 py-10 max-w-4xl mx-auto">
-<Routes>
-<Route path="/" element={<Home />} />
-<Route path="/about" element={<About />} />
-<Route path="/projects" element={<Projects />} />
-<Route path="/skills" element={<Skills />} />
-<Route path="/contact" element={<Contact />} />
-</Routes>
-</main>
-
-
-<Footer />
-</div>
-);
+      <div className="p-6">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </div>
+  );
 }
+
+export default App;

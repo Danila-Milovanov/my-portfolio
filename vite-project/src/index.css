@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-@apply bg-neutral-950 text-neutral-200;
+  background-color: #111827; /* Tailwind gray-900 */
+  color: white;
+  margin: 0;
+  font-family: system-ui, sans-serif;
 }
